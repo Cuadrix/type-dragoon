@@ -7,8 +7,7 @@ const throws = {
     TypeError: message => {throw new TypeError(message)},
     URIError: message => {throw new URIError(message)}
 };
-
-module.exports = (index, errorType) => {
+const assignThrow = (index, errorType) => {
     switch(errorType) {
         case "Error": return throws.Error;
         case "EvalError": return throws.EvalError;
@@ -20,3 +19,4 @@ module.exports = (index, errorType) => {
         default: throw new Error("[@arg:" + index + ":2] `" + errorType + "` is not a valid error type");
     }
 };
+module.exports = assignThrow;

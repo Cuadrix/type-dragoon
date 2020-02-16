@@ -1,7 +1,7 @@
 {
   "name": "type-dragoon",
-  "description": "Type enforcer for JavaScript in NodeJS",
-  "version": "1.0.0",
+  "description": "Type enforcer for JavaScript in Node.js",
+  "version": "1.0.5",
   "author": "Cuadrix <cuadrix12000@gmail.com> (https://github.com/Cuadrix)",
   "homepage": "https://github.com/Cuadrix/type-dragoon",
   "main": "./src/index.js",
